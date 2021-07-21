@@ -1,0 +1,27 @@
+POST http://localhost:3000/auth/signup  HTTP/1.1
+content-type: application/json
+
+{
+    "username": "HanyRashwan",
+    "password": "Asd!0!@sd"
+}
+
+###
+POST http://localhost:3000/auth/signin  HTTP/1.1
+content-type: application/json
+
+{
+    "username": "HanyRashwan",
+    "password": "Asd!0!@sd"
+}
+###
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhhbnlSYXNod2FuIiwiaWF0IjoxNjI2NTYxMDk5LCJleHAiOjE2MjY1NjQ2OTl9.FgiRo4HfYFWNvsGqp69O14Rh9EcxsUiVLJtVr_6Tm6E
+
+POST http://localhost:3000/tasks  HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhhbnlSYXNod2FuIiwiaWF0IjoxNjI2NTYxMDk5LCJleHAiOjE2MjY1NjQ2OTl9.FgiRo4HfYFWNvsGqp69O14Rh9EcxsUiVLJtVr_6Tm6E 
+
+{
+    "title": "enginner",
+    "describtion": "software"
+}

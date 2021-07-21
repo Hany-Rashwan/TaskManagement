@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { IsString, MaxLength, MinLength } from "class-validator";
 
 export class AuthCredentialsDto {

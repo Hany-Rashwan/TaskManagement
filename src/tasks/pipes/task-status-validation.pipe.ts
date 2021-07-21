@@ -1,7 +1,7 @@
-import {ArgumentMetadata, BadRequestException, PipeTransform} from '@nestjs/common';
-import { exception } from 'node:console';
+/* eslint-disable prettier/prettier */
+import { BadRequestException, PipeTransform} from '@nestjs/common';
 import { TaskStatus } from '../task-status.enum';
- // custom validation class level validation
+ // custom validation class level validation (trnsforming input (letters to capital)
 export class TaskStatusValidationPipe implements PipeTransform {
    
     readonly allowedStatuses =  [TaskStatus.OPEN, TaskStatus.IN_PROGRESS, TaskStatus.DONE];

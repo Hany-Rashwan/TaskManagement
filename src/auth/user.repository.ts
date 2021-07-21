@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ConflictException, InternalServerErrorException } from "@nestjs/common";
 import { config } from "node:process";
 import { AuthCredentialsDto } from "src/tasks/Dto/auth-credentials-dto";
